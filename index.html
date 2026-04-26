@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <title>Medellín Stream Tactical</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;900&family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startTime()">
+
+    <div class="consola-master" id="ui">
+        <div class="etiqueta-tactica rotulo-superior-izq">SER: MST-2026-JLS</div>
+        <div class="etiqueta-tactica rotulo-superior-der">MODEL: TACTICAL-V5</div>
+        <div class="etiqueta-tactica rotulo-seguridad">[!] CONFIDENTIAL AUDIO STREAM</div>
+
+        <div class="master-display">
+            <div class="screen-led">
+                <div class="vu-meter"><div class="vu-bar" id="bar-l"></div></div>
+                <div class="display-content">
+                    <div class="on-air">ON AIR</div>
+                    <div class="digital-clock" id="clock-display">00:00:00 AM</div>
+                    <h1 class="station-name">MEDELLÍN STREAM</h1>
+                    <div class="cintillo"><marquee id="marquee-text" scrollamount="4">>>> STANDBY >>> MEDELLÍN STREAM >>></marquee></div>
+                </div>
+                <div class="vu-meter"><div class="vu-bar" id="bar-r"></div></div>
+            </div>
+        </div>
+        
+        <div class="mixer">
+            <div class="knob-panel"><span class="knob-label">VOLUMEN</span><div class="knob-surround"><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="dial" style="transform: rotate(-80deg);"></div></div></div>
+            <div class="knob-panel"><span class="knob-label">MASTER</span><div class="knob-surround"><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="dial" id="main-dial" style="transform: rotate(-120deg);"></div></div></div>
+            <div class="knob-panel"><span class="knob-label">EFECTOS</span><div class="knob-surround"><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="dial" style="transform: rotate(30deg);"></div></div></div>
+            
+            <div style="position: absolute; bottom: 12px; width: 100%; text-align: center; font-family: 'Black Ops One', cursive; font-size: 14px; color: #ff0000; letter-spacing: 3px; text-transform: uppercase; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); pointer-events: none;">
+                Conectando Tus Sentidos</div>
+        </div>
+
+        <div class="controls">
+            <button class="btn-pro" id="btn-play-master" onclick="play()"><div>▶</div><span>PLAY</span></button>
+            <button class="btn-pro" onclick="stop()"><div>■</div><span>STOP</span></button>
+            <button class="btn-pro" onclick="announceTime()"><div>🔊</div><span>HORA</span></button>
+            <button class="btn-pro" onclick="window.open('https://onlineradiobox.com/co/medellinstream/')"><div>📻</div><span>RADIO BOX</span></button>
+            <button class="btn-pro" onclick="window.open('https://mytuner-radio.com/radio/medellin-stream-499808/')"><div>🎧</div><span>MYTUNER</span></button>
+            <button class="btn-pro" onclick="window.open('https://wa.me/573235005412')"><div class="wa-icon"></div><span>ESCRIBENOS</span></button>
+            <button class="btn-pro btn-download" onclick="window.open('https://www.appcreator24.com/app3986451-a9h5m1')"><div>📲</div><span>DESCARGA NUESTRA APP</span></button>
+        </div>
+        
+        <div class="pro-footer">
+            <div class="status-bar">
+                <div class="status-item"><div class="led-dot led-signal"></div> SIGNAL</div>
+                <div class="status-item"><div class="led-dot led-buffer"></div> STREAMING</div>
+                <div class="status-item"><div class="led-dot led-secure"></div> HQ-AUDIO</div>
+            </div>
+            <div class="brand-tag">® MEDELLÍN STREAM TACTICAL 2026</div>
+        </div>
+
+        <audio crossorigin="anonymous" id="stream"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
