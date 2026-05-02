@@ -1,6 +1,50 @@
-/* MEDELLÍN STREAM PRO 2026 - SISTEMA PROTEGIDO V2 */
-const _0x_pro = "Y29uc3QgcyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJzdHJlYW0iKTsKY29uc3QgdSA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJ1aSIpOwpjb25zdCBuID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoIm1hcnF1ZWUtdGV4dCIpOyBmdW5jdGlvbiBwbGF5KCkgeyB1LmNsYXNzTGlzdC5hZGQoJ29uJyk7IG4uaW5uZXJIVE1MID0gIi0tLSBFU1TBUyBFU0NVQ0hBTkRPIE1FREVMTM1OIFNUUkVBTTogQ09ORUNUQU5ETyBUVVMgU0VOVElET1MgLS0tIjsgcy5zcmMgPSAiaHR0cHM6Ly91c2ExNi5mYXN0Y2FzdDR1LmNvbS9wcm94eS9tZWRlbGxinj9tcD0vMSI7IHMubG9hZCgpOyBzLnBsYXkoKS50aGVuKCgpPT57fSkuY2F0Y2goZT0+Y29uc29sZS5sb2coImVycm9yIikpOyB9IGZ1bmN0aW9uIHN0b3AoKSB7IHMucGF1c2UoKTsgcy5zcmMgPSAiIjsgdS5jbGFzc0xpc3QucmVtb3ZlKCdvbicpOyBuLmlubmVySFRNTCA9ICI+Pj4gU1RBTkRCWSA+Pj4iOyB9IHN0YXJ0VGltZSgpOw==";
-eval(atob(_0x_pro));
+const s = document.getElementById("stream");
+const u = document.getElementById("ui");
+const n = document.getElementById("marquee-text");
 
-// Ejecutar reloj automáticamente al cargar
-window.onload = () => { if(typeof start跑Time === 'function') start跑Time(); };
+function play() { 
+    u.classList.add('on');
+    n.innerHTML = "--- ESTÁS ESCUCHANDO MEDELLÍN STREAM: CONECTANDO TUS SENTIDOS --- DESDE COLOMBIA PARA TODO EL MUNDO --- ------ 📻 Disponible 24/7 en TopEmisoras.com ---";
+    document.getElementById('main-dial').style.transform = 'rotate(120deg)'; 
+    s.src = "https://usa16.fastcast4u.com/proxy/medellin?mp=/1&cb=" + Date.now();
+    s.play();
+}
+
+function stop() { 
+    s.pause(); 
+    s.src = ""; 
+    u.classList.remove('on');
+    document.getElementById('main-dial').style.transform = 'rotate(-120deg)'; 
+    n.innerHTML = ">>> STANDBY >>> MEDELLÍN STREAM >>>";
+}
+
+function startTime() { 
+    setInterval(() => { 
+        document.getElementById('clock-display').innerHTML = new Date().toLocaleTimeString(); 
+    }, 1000); 
+}
+
+function announceTime() {
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    
+    let saludo = "";
+    if (hours >= 5 && hours < 12) {
+        saludo = "Muy buenos días, Medellín Stream te informa que son las ";
+    } else if (hours >= 12 && hours < 19) {
+        saludo = "Buenas tardes, en Medellín Stream son las ";
+    } else {
+        saludo = "Muy buenas noches, en Medellín Stream son las ";
+    }
+
+    const mensaje = saludo + hours + " y " + (minutes < 10 ? "0" + minutes : minutes) + ". Somos Medellin Stream,Conectando tus sentidos.";
+    
+    const msg = new SpeechSynthesisUtterance(mensaje);
+    msg.lang = 'es-CO';
+    msg.pitch = 0.9; 
+    msg.rate = 1.0;  
+    msg.volume = 2;
+    
+    window.speechSynthesis.speak(msg);
+}
