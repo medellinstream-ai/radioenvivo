@@ -13,17 +13,17 @@ body {
 .consola-master { 
     width: 100%; 
     max-width: 480px; 
-    background: #c2b280; 
+    background: #c5ae87; /* Color arena de la imagen */
     background-image: 
         repeating-linear-gradient(90deg, transparent, transparent 1px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0.05) 2px), 
-        linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.1) 100%);
+        linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.1) 100%); /* TU TEXTURA ORIGINAL INTACTA */
     border-radius: 50px; 
     padding: 30px 20px; 
-    border: 3px solid #a3946a; 
+    border: 3px solid #9b8a6d; /* Tono de borde de la imagen */
     border-bottom: 15px solid #4a4435; 
     box-shadow: 0 20px 80px rgba(0,0,0,0.9), inset 1px 1px 3px rgba(255,255,255,0.4); 
     position: relative; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .etiqueta-tactica {
