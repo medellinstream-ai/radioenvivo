@@ -4,7 +4,7 @@ const n = document.getElementById("marquee-text");
 
 function play() { 
     u.classList.add('on');
-    n.innerHTML = "--- ESTÁS ESCUCHANDO MEDELLÍN STREAM: CONECTANDO TUS SENTIDOS --- DESDE COLOMBIA PARA TODO EL MUNDO --- CALIDAD AUDITIVA --- DESCARGA NUESTRA APP OFICIAL --- SINTONIZA LO BUENO ---";
+    n.innerHTML = "--- ESTÁS ESCUCHANDO MEDELLÍN STREAM: CONECTANDO TUS SENTIDOS --- DESDE COLOMBIA PARA TODO EL MUNDO --- ------ 📻 Disponible 24/7 en TopEmisoras.com ---";
     document.getElementById('main-dial').style.transform = 'rotate(120deg)'; 
     s.src = "https://usa16.fastcast4u.com/proxy/medellin?mp=/1&cb=" + Date.now();
     s.play();
@@ -31,20 +31,20 @@ function announceTime() {
     
     let saludo = "";
     if (hours >= 5 && hours < 12) {
-        saludo = "Muy buenos días, Medellín Stream informa que son las ";
+        saludo = "Muy buenos días, Medellín Stream te informa que son las ";
     } else if (hours >= 12 && hours < 19) {
         saludo = "Buenas tardes, en Medellín Stream son las ";
     } else {
         saludo = "Muy buenas noches, en Medellín Stream son las ";
     }
 
-    const mensaje = saludo + hours + " y " + (minutes < 10 ? "0" + minutes : minutes) + ". Conectando tus sentidos.";
+    const mensaje = saludo + hours + " y " + (minutes < 10 ? "0" + minutes : minutes) + ". Somos Medellin Stream,Conectando tus sentidos.";
     
     const msg = new SpeechSynthesisUtterance(mensaje);
     msg.lang = 'es-CO';
     msg.pitch = 0.9; 
     msg.rate = 1.0;  
-    msg.volume = 1;
+    msg.volume = 2;
     
     window.speechSynthesis.speak(msg);
 }
