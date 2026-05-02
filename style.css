@@ -1,4 +1,4 @@
-/* ARCHIVO OPTIMIZADO PARA FIREFOX Y MÓVIL - MEDELLÍN STREAM */
+/* CONSOLA TÁCTICA MST-2026-JLS - VERSIÓN ORIGINAL */
 body { 
     margin: 0; 
     background: #0d0d0b; 
@@ -8,8 +8,7 @@ body {
     min-height: 100vh; 
     font-family: 'Segoe UI', sans-serif; 
     padding: 10px; 
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box; 
 }
 
 .consola-master { 
@@ -20,106 +19,81 @@ body {
         repeating-linear-gradient(90deg, transparent, transparent 1px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0.05) 2px), 
         linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.1) 100%);
     border-radius: 50px; 
-    padding: 25px 15px; 
+    padding: 30px 20px; 
     border: 3px solid #a3946a; 
     border-bottom: 15px solid #4a4435; 
-    box-shadow: 0 20px 60px rgba(0,0,0,0.8); 
+    box-shadow: 0 30px 80px rgba(0,0,0,0.9); 
     position: relative; 
-    box-sizing: border-box;
-    overflow: hidden; /* Evita deformaciones en Firefox */
 }
 
 .etiqueta-tactica {
     position: absolute; 
     font-family: 'Black Ops One', cursive; 
-    font-size: 9px;
-    color: rgba(0,0,0,0.7); 
+    font-size: 10px;
+    color: rgba(0,0,0,0.6); 
     text-transform: uppercase; 
-    letter-spacing: 1px;
-    z-index: 1;
+    letter-spacing: 2px;
 }
-.rotulo-superior-izq { top: 12px; left: 35px; }
-.rotulo-superior-der { top: 12px; right: 35px; }
-.rotulo-seguridad { bottom: 10px; right: 35px; font-size: 7px; color: #8b0000; border: 1px solid rgba(139,0,0,0.2); padding: 1px 4px; }
+.rotulo-superior-izq { top: 15px; left: 40px; }
+.rotulo-superior-der { top: 15px; right: 40px; }
 
-.master-display { display: flex; margin-bottom: 20px; width: 100%; }
+.master-display { display: flex; margin-bottom: 25px; }
 .screen-led { 
     flex: 1; 
-    height: 160px; 
+    height: 180px; 
     background: #000; 
-    border-radius: 20px; 
-    padding: 12px; 
+    border-radius: 25px; 
+    padding: 15px; 
     position: relative; 
-    border: 4px solid #221e1a; 
-    box-shadow: inset 0px 0px 30px #000; 
+    border: 5px solid #221e1a; 
+    box-shadow: inset 0px 0px 40px #000; 
     display: flex; 
-    gap: 8px; 
-    align-items: stretch;
+    gap: 10px; 
 }
 
-.vu-meter { width: 10px; background: #050505; border-radius: 3px; position: relative; overflow: hidden; border: 1px solid #1a1a1a; }
-.vu-bar { position: absolute; bottom: 0; width: 100%; height: 0%; background: linear-gradient(to top, #00f2ff, #ffffff); transition: height 0.3s ease; }
+.vu-meter { width: 12px; background: #050505; border-radius: 4px; position: relative; overflow: hidden; border: 1px solid #1a1a1a; }
+.vu-bar { position: absolute; bottom: 0; width: 100%; height: 0%; background: linear-gradient(to top, #00f2ff, #ffffff); box-shadow: 0 0 15px #00f2ff; transition: height 0.3s ease-in-out; }
 
 .display-content { flex: 1; display: flex; flex-direction: column; justify-content: space-between; text-align: center; }
-.on-air { font-size: 10px; font-weight: 900; padding: 2px 10px; border-radius: 4px; color: #333; border: 1px solid #333; margin: 0 auto; }
-.on .on-air { background: #ff0000; color: #fff; border-color: #ff5555; animation: pulse-red 1s infinite; }
+.on-air { font-size: 11px; font-weight: 900; padding: 3px 12px; border-radius: 5px; color: #333; border: 2px solid #333; margin: 0 auto; }
+.on .on-air { background: #ff0000; color: #fff; border-color: #ff5555; box-shadow: 0 0 15px #ff0000; animation: pulse 1s infinite; }
 
-@keyframes pulse-red { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+@keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
 
-.station-name { color: #332d26; font-size: 1.2em; font-weight: 900; margin: 5px 0; font-family: 'Orbitron', sans-serif; }
-.on .station-name { color: #fff; text-shadow: 0 0 10px #00f2ff; }
-.digital-clock { font-family: 'Orbitron', sans-serif; font-size: 18px; color: #1a1a15; margin: 2px auto; }
-.on .digital-clock { color: #00ffff; }
+.station-name { color: #332d26; font-size: 1.5em; font-weight: 900; margin: 10px 0; font-family: 'Orbitron', sans-serif; transition: 0.5s; }
+.on .station-name { color: #fff; text-shadow: 0 0 20px #00f2ff; }
+.digital-clock { font-family: 'Orbitron', sans-serif; font-size: 22px; color: #1a1a15; margin: 5px auto; }
+.on .digital-clock { color: #00ffff; text-shadow: 0 0 10px rgba(0,255,255,0.5); }
 
-.cintillo { background: rgba(0,0,0,0.9); padding: 5px; border-radius: 5px; border: 1px solid #333; overflow: hidden; }
-.cintillo marquee { color: #333; font-size: 11px; }
-.on .cintillo marquee { color: #00f2ff; }
+.cintillo { background: rgba(0,0,0,0.8); padding: 8px; border-radius: 8px; border: 1px solid #222; overflow: hidden; }
+.cintillo marquee { color: #222; font-size: 12px; font-weight: bold; }
+.on .cintillo marquee { color: #00f2ff; text-shadow: 0 0 5px #00f2ff; }
 
-.mixer { display: flex; justify-content: space-around; padding: 35px 5px 50px 5px; background: #2a251f; border-radius: 30px; border: 2px solid #1a1814; position: relative; margin-bottom: 20px; }
-.knob-panel { display: flex; flex-direction: column; align-items: center; }
-.knob-label { font-size: 8px; font-weight: 900; color: #000; font-family: 'Orbitron', sans-serif; margin-bottom: 30px; }
-.on .knob-label { color: #fff; }
+.mixer { display: flex; justify-content: space-around; padding: 40px 10px 60px 10px; background: #2a251f; border-radius: 40px; border: 3px solid #1a1814; position: relative; margin-bottom: 25px; box-shadow: inset 0 10px 20px rgba(0,0,0,0.5); }
+.knob-label { font-size: 9px; font-weight: 900; color: #000; font-family: 'Orbitron', sans-serif; margin-bottom: 35px; text-transform: uppercase; }
+.on .knob-label { color: #fff; text-shadow: 0 0 10px #fff; }
 
-.dial { width: 45px; height: 45px; background: #111; border-radius: 50%; border: 2px solid #000; position: relative; transition: transform 0.5s ease; }
-.dial::before { content: ''; position: absolute; top: 4px; left: 50%; width: 3px; height: 12px; background: #ff0000; transform: translateX(-50%); border-radius: 2px; }
+.dial { width: 55px; height: 55px; background: #111; border-radius: 50%; border: 3px solid #000; position: relative; transition: 0.5s; box-shadow: 0 5px 15px rgba(0,0,0,0.5); }
+.dial::before { content: ''; position: absolute; top: 5px; left: 50%; width: 4px; height: 15px; background: #ff0000; transform: translateX(-50%); border-radius: 2px; }
 
-.controls { 
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 10px; 
-    width: 100%;
-}
-.btn-pro { 
-    aspect-ratio: 1/1; 
-    width: 100%;
-    min-height: 70px;
-    border-radius: 15px; 
-    background: #111; 
-    cursor: pointer; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    border: 3px solid #000; 
-    box-shadow: 0px 5px 0px #000; 
-    position: relative; 
-}
-.btn-pro:active { transform: translateY(3px); box-shadow: 0px 2px 0px #000; }
-.btn-pro div { font-size: 20px; color: #222; }
-.btn-pro span { font-size: 8px; font-weight: 900; color: #222; margin-top: 5px; }
+.controls { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.btn-pro { aspect-ratio: 1; border-radius: 20px; background: #111; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 4px solid #000; box-shadow: 0px 8px 0px #000; transition: 0.2s; position: relative; }
+.btn-pro:active { transform: translateY(4px); box-shadow: 0px 4px 0px #000; }
+.btn-pro div { font-size: 24px; color: #222; }
+.btn-pro span { font-size: 9px; font-weight: 900; color: #222; margin-top: 8px; text-transform: uppercase; }
 
-.on .btn-pro { border-color: var(--led); box-shadow: 0px 5px 0px #000, 0 0 10px var(--led); }
-.on .btn-pro div, .on .btn-pro span { color: #fff; }
+.on .btn-pro { border-color: var(--led); box-shadow: 0px 8px 0px #000, 0 0 30px var(--led); }
+.on .btn-pro div { color: #fff; text-shadow: 0 0 10px #fff; }
+.on .btn-pro span { color: #fff; }
 
-.btn-download { grid-column: span 3; aspect-ratio: auto; padding: 15px; height: auto; }
+.btn-download { grid-column: span 3; aspect-ratio: auto; padding: 20px; height: auto; }
+.wa-icon { width: 28px; height: 28px; background: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg') no-repeat center; background-size: contain; filter: grayscale(100%); }
+.on .wa-icon { filter: grayscale(0%) drop-shadow(0 0 5px #25d366); }
 
-.wa-icon { width: 22px; height: 22px; background: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg') no-repeat center; background-size: contain; filter: grayscale(100%); }
-.on .wa-icon { filter: grayscale(0%) brightness(1.2); }
-
-.status-bar { display: flex; justify-content: center; gap: 10px; background: #1a1814; padding: 6px 12px; border-radius: 10px; margin: 20px 0 10px 0; }
-.status-item { font-size: 8px; font-family: 'Orbitron'; color: #333; display: flex; align-items: center; gap: 5px; }
-.led-dot { width: 5px; height: 5px; background: #111; border-radius: 50%; }
+.status-bar { display: flex; justify-content: center; gap: 15px; background: #1a1814; padding: 8px 20px; border-radius: 12px; margin: 25px 0 15px 0; border: 1px solid #2a251f; }
+.status-item { font-size: 9px; font-family: 'Orbitron'; color: #333; display: flex; align-items: center; gap: 8px; }
+.led-dot { width: 6px; height: 6px; background: #111; border-radius: 50%; }
 .on .status-item:nth-child(1) { color: #00ff7f; }
-.on .led-signal { background: #00ff7f; box-shadow: 0 0 5px #00ff7f; }
+.on .led-signal { background: #00ff7f; box-shadow: 0 0 10px #00ff7f; }
 
-.brand-tag { font-family: 'Black Ops One', cursive; font-size: 11px; color: #000; text-align: center; }
+.brand-tag { font-family: 'Black Ops One', cursive; font-size: 13px; color: #000; text-align: center; margin-top: 5px; opacity: 0.8; letter-spacing: 1px; }
