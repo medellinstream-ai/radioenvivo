@@ -4,7 +4,7 @@ const n = document.getElementById("marquee-text");
 
 function play() { 
     u.classList.add('on');
-    n.innerHTML = "--- ESTÁS ESCUCHANDO MEDELLÍN STREAM: CONECTANDO TUS SENTIDOS --- DESDE COLOMBIA PARA TODO EL MUNDO --- ------ 📻 Disponible 24/7 en TopEmisoras.com ---";
+    n.innerHTML = "--- ESTÁS ESCUCHANDO MEDELLÍN STREAM: CONECTANDO TUS SENTIDOS --- DESDE COLOMBIA PARA TODO EL MUNDO --YA ESTAMOS EN TUNEIN RADIO.. SINTONIZA NUESTRA SEÑAL DESDE CUALQUIER LUGAR- 📻 DISPONIBLE 24/7 EN TOPEMISORAS.COM- ESCRIBENOS A NUESTRO CORREO OFICIAL MEDELLINSTREAM@GMAIL.COM--";
     document.getElementById('main-dial').style.transform = 'rotate(120deg)'; 
     s.src = "https://usa16.fastcast4u.com/proxy/medellin?mp=/1&cb=" + Date.now();
     s.play();
