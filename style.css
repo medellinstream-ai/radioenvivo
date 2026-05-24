@@ -14,7 +14,7 @@ body {
     width: 100%; 
     max-width: 480px; 
     /* Cambiado únicamente el color base neutral (#c2b280) por un tono madera cálido y equilibrado */
-    background: #6a4219; 
+    background: linear-gradient(135deg, #2b2621 0%, #171412 100%); 
     background-image: 
         repeating-linear-gradient(90deg, transparent, transparent 1px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0.05) 2px), 
         linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.1) 100%);
