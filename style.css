@@ -10,33 +10,22 @@ body {
     box-sizing: border-box; 
 }
 
-/* 1. ESTILO BASE PARA PC: Mantiene su tamaño elegante y centrado */
-.consola-master {
-    background: linear-gradient(135deg, #6a4219 0%, #3d240c 100%);
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);
-    border: 3px solid #2b1807;
-    
-    /* Reglas para PC: Ancho controlado para que no se expanda a toda la pantalla */
-    width: 100%;
-    max-width: 420px; /* Aquí controlas el ancho en PC (ajusta el número si la quieres más ancha) */
-    margin: 20px auto; /* La centra perfectamente en la pantalla de la PC */
-    box-sizing: border-box;
+.consola-master { 
+    width: 100%; 
+    max-width: 480px; 
+    background: #c2b280; 
+    background-image: 
+        repeating-linear-gradient(90deg, transparent, transparent 1px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0.05) 2px), 
+        linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.1) 100%);
+    border-radius: 50px; 
+    padding: 30px 20px; 
+    border: 3px solid #a3946a; 
+    border-bottom: 15px solid #4a4435; 
+    box-shadow: 0 20px 80px rgba(0,0,0,0.9), inset 1px 1px 3px rgba(255,255,255,0.4); 
+    position: relative; 
+    box-sizing: border-box; 
 }
 
-/* 2. SOLUCIÓN PARA MÓVIL: Solo se activa en pantallas pequeñas (Celulares) */
-@media screen and (max-width: 480px) {
-    .consola-master {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 !important; /* Elimina márgenes para pegar a los bordes */
-        border-radius: 0; /* Opcional: quita esquinas redondeadas en celular para llenar más */
-    }
-    
-    body {
-        margin: 0 !important;
-        padding: 0 !important;
-        overflow-x: hidden;
-    }
 .etiqueta-tactica {
     position: absolute; 
     font-family: 'Black Ops One', cursive; 
