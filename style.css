@@ -13,10 +13,19 @@ body {
 .consola-master { 
     width: 100%; 
     max-width: 480px; 
-    background: #c2b280; 
+    
+    /* 1. Mantenemos tu color base original */
+    background: #b5a175; 
+    
+    /* 2. Aplicamos la micro-rejilla táctica cruzada y el degradado de volumen */
     background-image: 
-        repeating-linear-gradient(90deg, transparent, transparent 1px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0.05) 2px), 
-        linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.1) 100%);
+        linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px), 
+        linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.15) 100%);
+    
+    /* 3. Ajustamos el tamaño de los cuadros de la rejilla (4px por 4px) */
+    background-size: 4px 4px, 4px 4px, 100% 100%;
+
     border-radius: 50px; 
     padding: 30px 20px; 
     border: 3px solid #a3946a; 
