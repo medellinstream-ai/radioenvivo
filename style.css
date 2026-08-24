@@ -11,11 +11,11 @@ body {
 }
 
 .consola-master { 
-    width: 100%; 
+   width: 100%; 
     max-width: 480px; 
     
-    /* 1. Mantenemos tu color base original */
-    background: #b5a175; 
+    /* 1. Aplicamos el color base Azul Noche Studio */
+    background: #141f2d; 
     
     /* 2. Aplicamos la micro-rejilla táctica cruzada y el degradado de volumen */
     background-image: 
@@ -28,11 +28,11 @@ body {
 
     border-radius: 50px; 
     padding: 30px 20px; 
-    border: 3px solid #a3946a; 
-    border-bottom: 15px solid #4a4435; 
+    border: 3px solid #223348; 
+    border-bottom: 15px solid #0a1018; 
     box-shadow: 0 20px 80px rgba(0,0,0,0.9), inset 1px 1px 3px rgba(255,255,255,0.4); 
     position: relative; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .etiqueta-tactica {
