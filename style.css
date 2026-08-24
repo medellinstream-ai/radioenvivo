@@ -11,25 +11,23 @@ body {
 }
 
 .consola-master { 
-   width: 100%; 
+  width: 100%; 
     max-width: 480px; 
     
-    /* 1. Aplicamos el color base Azul Noche Studio */
-    background: #141f2d; 
+    /* Azul Studio Claro para contraste con letras oscuras */
+    background: #6c8ca8; 
     
-    /* 2. Aplicamos la micro-rejilla táctica cruzada y el degradado de volumen */
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
         linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px), 
-        linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.15) 100%);
+        linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(0, 0, 0, 0.15) 100%);
     
-    /* 3. Ajustamos el tamaño de los cuadros de la rejilla (4px por 4px) */
     background-size: 4px 4px, 4px 4px, 100% 100%;
 
     border-radius: 50px; 
     padding: 30px 20px; 
-    border: 3px solid #223348; 
-    border-bottom: 15px solid #0a1018; 
+    border: 3px solid #82a2be; 
+    border-bottom: 15px solid #4a6278; 
     box-shadow: 0 20px 80px rgba(0,0,0,0.9), inset 1px 1px 3px rgba(255,255,255,0.4); 
     position: relative; 
     box-sizing: border-box;
