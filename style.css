@@ -166,3 +166,16 @@ body {
     color: #000000; 
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; 
 }
+/* Rótulos tácticos en estado encendido (.on) */
+.on .rotulo-superior-izq,
+.on .rotulo-superior-der {
+    color: #ffffff !important;
+    text-shadow: 0 0 8px #00f2ff, 0 0 15px rgba(0, 242, 255, 0.6) !important;
+}
+
+.on .rotulo-seguridad {
+    color: #ff3b5c !important;
+    border-color: #ff3b5c !important;
+    box-shadow: 0 0 8px rgba(255, 59, 92, 0.8), inset 0 0 4px rgba(255, 59, 92, 0.4) !important;
+    text-shadow: 0 0 6px #ff3b5c !important;
+}
