@@ -127,9 +127,9 @@ body {
 /* COLORES NEÓN ACTUALIZADOS SEGÚN PROPUESTA */
 .on .btn-pro:nth-child(1) { --led: #FFD21F; } /* PLAY - Amarillo Neón */
 .on .btn-pro:nth-child(2) { --led: #FF3B5C; } /* STOP - Rojo Neón */
-.on .btn-pro:nth-child(3) { --led: #FF1493; } /* TUNEIN - Fucsia/Rosa Neón */
+.on .btn-pro:nth-child(3) { --led: #A855F7; } /* TUNEIN - Fucsia/Rosa Neón */
 .on .btn-pro:nth-child(4) { --led: #33E4FF; } /* ONLINE RADIO BOX - Naranja Neón */
-.on .btn-pro:nth-child(5) { --led: #A855F7; } /* MYTUNER - Púrpura Neón */
+.on .btn-pro:nth-child(5) { --led: #FF1493; } /* MYTUNER - Púrpura Neón */
 .on .btn-pro:nth-child(6) { --led: #22D66B; } /* ESCRÍBENOS - Verde WhatsApp */
 .btn-pro.btn-download { --led: #FF1493; grid-column: span 3; aspect-ratio: auto; padding: 22px; margin-top: 10px; } /* DESCARGA APP - Fucsia Neón */
 
