@@ -4,7 +4,7 @@ const n = document.getElementById("marquee-text");
 
 function play() { 
     u.classList.add('on');
-    n.innerHTML = "--- ESTÁS ESCUCHANDO MEDELLÍN STREAM: CONECTANDO TUS SENTIDOS --- DESDE COLOMBIA PARA TODO EL MUNDO --- ------ 📻 Disponible 24/7 en TopEmisoras.com ---";
+    n.innerHTML = "🔴 MEDELLÍN STREAM EN VIVO — Conectando a más de 30 países con la mejor producción sonora 🎧 | SINTONÍZANOS EN PLATAFORMAS: TuneIn • MyTuner Radio • Online Radio Box • Topemisoras.com | DISPOSITIVOS MÓVILES: Descarga gratis las Apps Radios Colombianas y miRadio en Google Play Store | PIDE TU CANCIÓN Y PARTICIPA: Escríbenos a nuestro WhatsApp Oficial 📲 +57 323 500 5412 | MEDELLÍN STREAM: ¡La consola de radio online que manda en la red! 🔥";
     document.getElementById('main-dial').style.transform = 'rotate(120deg)'; 
     s.src = "https://usa16.fastcast4u.com/proxy/medellin?mp=/1&cb=" + Date.now();
     s.play();
@@ -15,7 +15,7 @@ function stop() {
     s.src = ""; 
     u.classList.remove('on');
     document.getElementById('main-dial').style.transform = 'rotate(-120deg)'; 
-    n.innerHTML = ">>> STANDBY >>> MEDELLÍN STREAM >>>";
+    n.innerHTML = ">>> STANDBY >>> MEDELLÍN STREAM >>> PRESIONA PLAY PARA ENTRAR EN CABINA >>>";
 }
 
 function startTime() { 
