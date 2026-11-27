@@ -73,7 +73,7 @@ body {
 .cintillo marquee { color: #333; font-size: 12px; font-weight: bold; }
 .on .cintillo marquee { color: #00f2ff; text-shadow: 0 0 5px #00f2ff; }
 
-.mixer { display: flex; justify-content: space-around; align-items: center; margin: 25px 0; padding: 45px 10px 60px 10px; background: linear-gradient(145deg, #2a251f, #3d352b); border-radius: 35px; border: 2px solid #1a1814; box-shadow: inset 5px 5px 15px rgba(0,0,0,0.7); position: relative; }
+.mixer { display: flex; justify-content: space-around; align-items: center; margin: 25px 0; padding: 45px 10px 60px 10px; background: linear-gradient(145deg, #1d232b, #28303b); border-radius: 35px; border: 2px solid #1a1814; box-shadow: inset 5px 5px 15px rgba(0,0,0,0.7); position: relative; }
 .knob-panel { display: flex; flex-direction: column; align-items: center; position: relative; }
 .knob-label { font-size: 9px; font-weight: 900; color: #000; text-transform: uppercase; margin-bottom: 40px; font-family: 'Orbitron', sans-serif; transition: 0.3s; }
 .on .knob-label { color: #fff; text-shadow: 0 0 8px rgba(255,255,255,0.5); }
