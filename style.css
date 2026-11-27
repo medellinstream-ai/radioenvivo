@@ -15,7 +15,7 @@ body {
     max-width: 480px; 
     
     /* Fondo base Arena Táctica Claro / Desert Sand */
-    background: #1b222c; 
+    background: #323c4a; 
     
     /* Malla gráfica táctica en tono caqui y degradado de volumen */
     background-image: 
@@ -29,8 +29,8 @@ body {
     padding: 30px 20px; 
     
     /* Borde superior e inferior biselado 3D en tonos Coyotes/Arena */
-   border: 3px solid #2e3846; 
-   border-bottom: 15px solid #0b0e13; 
+   border: 3px solid #556478; 
+   border-bottom: 15px solid #181e26; 
 
     box-shadow: 0 20px 50px rgba(0,0,0,0.85), inset 1px 1px 3px rgba(255,255,255,0.12);
     position: relative; 
